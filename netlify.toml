@@ -1,6 +1,6 @@
 [build]
   publish = "dist/standalone"
-  command = "CI= npm run build"
+  command = "NODE_ENV=production CI= npm run build"
 
 [build.environment]
 NODE_VERSION = "14.17.5"
