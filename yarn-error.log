@@ -1,0 +1,83 @@
+Arguments: 
+  C:\Program Files\nodejs\node.exe C:\Program Files\nodejs\node_modules\yarn\bin\yarn.js
+
+PATH: 
+  C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Users\ThinkPad\AppData\Roaming\nvm;C:\Program Files\nodejs;C:\Program Files\Git\cmd;C:\Program Files\Microsoft SQL Server\150\Tools\Binn\;C:\Program Files\dotnet\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;C:\Program Files\MySQL\MySQL Shell 8.0\bin\;C:\Users\ThinkPad\AppData\Local\Microsoft\WindowsApps;C:\Users\ThinkPad\AppData\Roaming\nvm;C:\Program Files\nodejs;C:\Users\ThinkPad\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\ThinkPad\.dotnet\tools
+
+Yarn version: 
+  1.22.19
+
+Node version: 
+  16.20.1
+
+Platform: 
+  win32 x64
+
+Trace: 
+  Error: https://registry.yarnpkg.com/rxjs/-/rxjs-7.5.5.tgz: ESOCKETTIMEDOUT
+      at ClientRequest.<anonymous> (C:\Users\ThinkPad\AppData\Roaming\nvm\v16.20.1\node_modules\yarn\lib\cli.js:141517:19)
+      at Object.onceWrapper (node:events:627:28)
+      at ClientRequest.emit (node:events:513:28)
+      at TLSSocket.emitRequestTimeout (node:_http_client:839:9)
+      at Object.onceWrapper (node:events:627:28)
+      at TLSSocket.emit (node:events:525:35)
+      at TLSSocket.Socket._onTimeout (node:net:550:8)
+      at listOnTimeout (node:internal/timers:559:17)
+      at processTimers (node:internal/timers:502:7)
+
+npm manifest: 
+  {
+      "name": "my-game",
+      "version": "3.3.2",
+      "description": "",
+      "main": "dist/server.js",
+      "types": "index.d.ts",
+      "publishConfig": {
+          "access": "public"
+      },
+      "scripts": {
+          "test": "NODE_ENV=test jest",
+          "build": "rimraf dist && rpgjs build",
+          "dev": "rpgjs dev",
+          "start": "node dist/server"
+      },
+      "keywords": [],
+      "author": "",
+      "license": "MIT",
+      "engines": {
+          "node": "<15"
+      },
+      "dependencies": {
+          "@rpgjs/client": "^3.3.2",
+          "@rpgjs/default-gui": "^3.3.0",
+          "@rpgjs/gamepad": "^3.3.0",
+          "@rpgjs/mobile-gui": "^3.3.0",
+          "@rpgjs/server": "^3.3.2",
+          "@rpgjs/standalone": "^3.3.0",
+          "@rpgjs/testing": "^3.3.0",
+          "@rpgjs/types": "^3.3.0",
+          "express": "4.17.1",
+          "pretty-error": "^4.0.0",
+          "socket.io": "4.1.2",
+          "socket.io-client": "4.1.2",
+          "vue": "^3.2.47"
+      },
+      "devDependencies": {
+          "@rpgjs/compiler": "^3.3.0",
+          "@types/jest": "26.0.23",
+          "@vue/cli-plugin-babel": "^5.0.8",
+          "@vue/compiler-sfc": "3.2.33",
+          "@vue/vue3-jest": "27.0.0-alpha.4",
+          "canvas": "2.8.0",
+          "jest": "27.0.4",
+          "rimraf": "3.0.2",
+          "ts-jest": "27.0.2",
+          "typescript": "4.3.2"
+      }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
